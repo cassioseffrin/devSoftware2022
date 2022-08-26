@@ -1,5 +1,6 @@
 package br.edu.cassio.aula3;
 
+
 import java.util.Scanner;
 
 public class MegaSena {
@@ -27,6 +28,9 @@ public class MegaSena {
 	}
 
 }
+
+
+
 
 
 
