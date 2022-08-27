@@ -20,12 +20,8 @@ public class MegaSena {
 		System.out.printf("\n\nO Numero de apostas para acertar quina é: %.1f", quina);		
 		System.out.printf("\n\nO Numero de apostas para acertar quadra é: %.1f", quadra);		
 		
-//		Scanner scan = new Scanner(System.in);
-//		System.out.println("Digite um numero: ");
-//		double numero = scan.nextDouble();
-//		System.out.printf("\n\nO fatorial do numero %s é: %.2f:", numero, fatorial(numero));
-	}
 
+	}
 }
 
 

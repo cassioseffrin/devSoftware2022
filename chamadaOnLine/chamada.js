@@ -39,39 +39,5 @@ for (alunoOriginal of listaOriginal) {
 // add_header Access-Control-Allow-Origin *;
 // add_header Access-Control-Allow-Origin "meet.google.com";
 
+// https://stackoverflow.com/questions/14248296/making-http-requests-using-chrome-developer-tools/73495422#73495422
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://stackoverflow.com/questions/14248296/making-http-requests-using-chrome-developer-tools/73495422#73495422
-
-
-/*
- * 1. Faça um algoritmo que peça o nome do usuário e em seguida mostre o mesmo na tela.
-
-/*
- * 2. Faça um algoritmo que peça dois números aos usuários e em seguida multiplique-os. 
-
-/*
- * 3. Faça um algoritmo que lê os valores de 3 números
-
-/*
- * 4. Faça um algoritmo para calcular o valor total de venda, dado que o 

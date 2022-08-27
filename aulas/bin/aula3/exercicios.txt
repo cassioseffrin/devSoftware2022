@@ -1,0 +1,9 @@
+/*
+ * 1. Faça um algoritmo que peça o nome do usuário e em seguida mostre o mesmo na tela.
+
+/*
+ * 2. Faça um algoritmo que peça dois números ao usuário e em seguida multiplique-os. 
+
+/*
+ * 3. Faça um algoritmo que lê os valores de 3 números e posteriormente os imprima na tela.
+
