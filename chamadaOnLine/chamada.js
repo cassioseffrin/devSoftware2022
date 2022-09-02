@@ -1,5 +1,3 @@
-
-
 const options = { method: 'GET' };
 let resposta = await fetch('https://www.whatsapprobo.com.br/chamada.json', options);
 let listaOriginal = await resposta.json();
@@ -12,15 +10,6 @@ for (aluno of lista) {
 	listaAtual.push({ aluno: nome, codigo: 0, data: new Date() });
 }
 
-// let listaAlunosPresentes = [];
-// for (alunoOriginal of listaOriginal) {
-// 	for (alunoAtual of listaAtual) {
-// 		if (alunoOriginal.aluno.toLowerCase() == alunoAtual.aluno.toLowerCase()) {
-// 			listaAlunosPresentes.push(alunoOriginal);
-// 		}
-// 	}
-// }
-
 let listaAlunosAusentes = [];
 for (alunoOriginal of listaOriginal) {
 	let encontrado = false;
@@ -30,14 +19,28 @@ for (alunoOriginal of listaOriginal) {
 		}
 	}
 	if (encontrado == false) {
-		listaAlunosAusentes.push(alunoOriginal)
+		listaAlunosAusentes.push(  {...alunoOriginal, data: new Date()} ) 
 	}
 }
 
+console.log(listaAlunosAusentes)
 
-// nginx
-// add_header Access-Control-Allow-Origin *;
-// add_header Access-Control-Allow-Origin "meet.google.com";
+
+
+// checagem listas
+//  let listaAlunosAusentesAula1 = [];
+// for (alunoAtual of listaAtual) {
+// 	let encontrado = false;
+// 	for (alunoOriginal of listaOriginal ) {
+// 		if (alunoOriginal.aluno.toLowerCase() == alunoAtual.aluno.toLowerCase()) {
+// 			encontrado = true;
+// 		}
+// 	}
+// 	if (encontrado == false) {
+// 		listaAlunosAusentesAula1.push(  {...alunoAtual, data: new Date()} ) 
+// 	}
+// }
+
 
 // https://stackoverflow.com/questions/14248296/making-http-requests-using-chrome-developer-tools/73495422#73495422
 
