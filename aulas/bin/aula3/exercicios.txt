@@ -7,3 +7,5 @@
 /*
  * 3. Faça um algoritmo que lê os valores de 3 números e posteriormente os imprima na tela.
 
+
+
