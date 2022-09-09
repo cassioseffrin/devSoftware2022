@@ -6,6 +6,8 @@ package exercicios;
 */
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+
 /*
  * 
  * 4. Construa um programa que leia a quantidade de quilômetros rodados e a quantidade gasta de
@@ -19,20 +21,19 @@ import java.util.Scanner;
  * escrever "media de km por litro" media
  */
 
-public class Exercicio4 {
+public class Exercicio4 extends JFrame {
+
 	public static void main(String a[]) {
 		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Digite a distancia em KMs:");
+		System.out.println("Digite a distancia em KMs: ");
 		float kms = scan.nextFloat();
-			
-		System.out.println("Digite o total de litros gastos:");
+		System.out.println("Digite o total de litros gastos: ");
 		float litros = scan.nextFloat();
-		
-		float resultado = kms / litros; 
-		
-		System.out.println("O consumo medio por litro e: " + resultado );
- 
+		float resultado = kms / litros;
+		System.out.println("O consumo medio por litro e: " + resultado);
+
+		Exercicio4 ex4 = new Exercicio4();
+
+		ex4.setVisible(true);
 	}
-	
 }
