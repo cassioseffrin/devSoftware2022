@@ -1,0 +1,2 @@
+/* * 5. Faça um algoritmo para calcular o valor total de venda, dado que o usuário deverá digitar o valor unitário(float) e o nome de um produto(String) e a quantidade vendida (float). */
+
