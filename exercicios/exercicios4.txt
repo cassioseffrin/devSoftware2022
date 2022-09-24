@@ -1,0 +1,2 @@
+/* * 6. encontrar os primos entre os 100 primeiros núnmeros,  
+/* * 7. escrever um algoritmo que some 2 fracoes. 
