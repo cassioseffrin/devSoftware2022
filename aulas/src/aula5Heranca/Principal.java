@@ -12,5 +12,8 @@ public class Principal {
 		farmaceutico.rg = "567567567";
 		farmaceutico.salvar();
 	}
+	
+	
+	
 
 }

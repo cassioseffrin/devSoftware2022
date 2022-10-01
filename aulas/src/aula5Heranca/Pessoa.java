@@ -8,6 +8,11 @@ public class Pessoa {
 	public String nome;
 	public String cpf;
 	public String rg;
+	
+	@Override
+	public String toString(){
+		return "Nome: "+ this.nome + "CPF: "+this.cpf;
+	}
 		
 	public void imprimirPessoa() {
 		System.out.printf("\n\nNome: %s\nCPF: %s\nRG: %s",nome,cpf,rg);
@@ -20,7 +25,8 @@ public class Pessoa {
 	public String getPessoaCSV() {
 		return String.format("\n%s;%s;%s",nome,cpf,rg);
 	}
-	
+
+ 
 	public boolean salvar() {
 		String arquivo = "/Users/cassioseffrin/pessoa.csv";
 		File f = new File(arquivo);
