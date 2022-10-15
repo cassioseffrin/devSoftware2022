@@ -22,5 +22,5 @@ public class Funcionario extends Pessoa{
 		Utils.salvar(this, ARQUIVO);
 	}
 
-	
+
 }
