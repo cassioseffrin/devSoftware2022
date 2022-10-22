@@ -2,9 +2,13 @@ package aula5Heranca;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Produto {
+public class Produto implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
 	
 	public static String ARQUIVO = "/Users/cassioseffrin/cliente.csv";
 	

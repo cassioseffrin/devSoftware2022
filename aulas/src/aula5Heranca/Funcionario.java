@@ -1,6 +1,11 @@
 package aula5Heranca;
 
-public class Funcionario extends Pessoa{
+import java.io.Serializable;
+
+public class Funcionario extends Pessoa implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
 	
 	public static String ARQUIVO = "/Users/cassioseffrin/funcionario.csv";
 	

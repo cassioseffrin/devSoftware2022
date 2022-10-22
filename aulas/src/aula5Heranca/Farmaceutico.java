@@ -1,6 +1,11 @@
 package aula5Heranca;
 
-public class Farmaceutico extends Funcionario{
+import java.io.Serializable;
+
+public class Farmaceutico extends Funcionario implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
 	
 	
 	public static String ARQUIVO = "/Users/cassioseffrin/farmaceutico.csv";

@@ -1,7 +1,15 @@
 package aula5Heranca;
- 
-public class Pessoa {
+
+import java.io.Serializable;
+
+public class Pessoa implements Serializable{
+	
+	
+	private static final long serialVersionUID = 1L;
+	
+	
 	public final static String ARQUIVO = "/Users/cassioseffrin/pessoa.csv";
+	public final static String ARQUIVO_SERIAL = "/Users/cassioseffrin/pessoa_serialv1.obj";
 	public String nome;
 	public String cpf;
 	public String rg;
