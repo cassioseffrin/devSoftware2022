@@ -20,7 +20,8 @@ public class Farmaceutico extends Funcionario implements Serializable{
 	
 	
 	public void salvar() {
-		Utils.salvar(this, ARQUIVO);
+		Utils utils = new Utils();
+		utils.salvar(this, ARQUIVO);
 	}
 	
 

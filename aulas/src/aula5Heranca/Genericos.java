@@ -6,7 +6,6 @@ public class Genericos {
 	
 	public static Integer[] intArray = {1, 2, 3, 4, 5};
 	
-	
 	public static void imprimirArrayString(String[] array ) {
 		for ( int i=0; i< array.length ;i++) {
 			System.out.println(array[i]);
@@ -19,7 +18,7 @@ public class Genericos {
 		}
 	}
 	
-	public static <E> void imprimirArrayGenerico(E[] array ) {
+	public static <E> void imprimirArrayGenerico(E[] array ) { 
 		for ( int i=0; i< array.length ;i++) {
 			System.out.println(array[i]);
 		}

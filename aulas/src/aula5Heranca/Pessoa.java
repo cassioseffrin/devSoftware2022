@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Pessoa implements Serializable{
 	
 	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 2L;
 	
 	
 	public final static String ARQUIVO = "/Users/cassioseffrin/pessoa.csv";
@@ -42,7 +42,37 @@ public class Pessoa implements Serializable{
 	}
 		
 	public void salvar() {
-		Utils.salvar(this, ARQUIVO);
+		Utils utils = new Utils();
+		utils.salvar(this, ARQUIVO);
 	}
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getRg() {
+		return rg;
+	}
+
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+
+	
+	
+	
+	
+	
 }

@@ -1,8 +1,8 @@
 package aula5Heranca;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 public class Principal {
 	public static void main(String args[]) {
@@ -12,14 +12,7 @@ public class Principal {
 //		farmaceutico.rg = "567567567";
 //		farmaceutico.salvar();
 //			
-//		Cliente cliente = new Cliente();
-//		cliente.nome = "Pedro";
-//		cliente.cpf = "23456465";
-//		cliente.rg = "567567567";
-//		cliente.telefone="(49))3442-2313";
-//		cliente.salvar();
-//		pessoa.salvar();
-//		Utils.lerPessoa(Pessoa.ARQUIVO);
+
 		
 		
 //		ArrayList<Pessoa> listaPessoas = Utils.lerPessoa(Pessoa.ARQUIVO);
@@ -35,12 +28,39 @@ public class Principal {
 		
  
 //		ArrayList<Pessoa> listaPessoas = new ArrayList<>();
-		Utils u = new Utils();
- 
-		 List<Pessoa> lst =  ( List<Pessoa> ) u.deserializarLista(Pessoa.ARQUIVO_SERIAL);
-		 System.out.println(lst.size());
- 
+//		Utils u = new Utils();
+// 
+//		 List<Pessoa> lst =  ( List<Pessoa> ) u.deserializarLista(Pessoa.ARQUIVO_SERIAL);
+//		 System.out.println(lst.size());
 		
+		adicionarCliente();
+		
+		
+		Utils u = new Utils();
+		List<Cliente> lstCliente = (List<Cliente>) u.lerLista(Cliente.ARQUIVOSERIAL);
+		for (Cliente c: lstCliente) {
+			System.out.println(c.getNome());
+		}	
+		
+	}
+
+	private static void adicionarCliente() {
+		Cliente cliente = new Cliente();
+		cliente.nome = "Ana";
+		cliente.cpf = "23456465";
+		cliente.rg = "567567567";
+		cliente.telefone="(49)3442-2343";
+		
+		Produto p = new Produto();
+		p.setCodigoBarra(2342342344453L);
+		p.setDataFabricacao ( new Date());
+		p.setDataValidade (new Date());
+
+		ArrayList<Produto> lstProdutos = new ArrayList<Produto>();
+		lstProdutos.add(p);
+		cliente.setLstProdutos(lstProdutos);
+		
+		cliente.salvar();
 	}
 }
 

@@ -24,7 +24,8 @@ public class Funcionario extends Pessoa implements Serializable{
 	
 	
 	public void salvar() {
-		Utils.salvar(this, ARQUIVO);
+		Utils utils = new Utils();
+		utils.salvar(this, ARQUIVO);
 	}
 
 
