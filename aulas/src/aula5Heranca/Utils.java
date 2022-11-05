@@ -29,7 +29,7 @@ public class Utils {
 		}
 	}
 
-//	public <E> boolean salvar(List<E> entidades, String arquivo) {
+ 
 	public <E> boolean salvar(E entidade, String arquivo) {
 		List<E> lstEntidadesGenerica = (List<E>) lerLista(arquivo);		
 //		List<E> lstEntidadesGenerica = new ArrayList<>();

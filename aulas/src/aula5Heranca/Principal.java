@@ -33,15 +33,18 @@ public class Principal {
 //		 List<Pessoa> lst =  ( List<Pessoa> ) u.deserializarLista(Pessoa.ARQUIVO_SERIAL);
 //		 System.out.println(lst.size());
 		
-		adicionarCliente();
+//		adicionarCliente();
 		
+		imprimirListaClientes();	
 		
+	}
+
+	private static void imprimirListaClientes() {
 		Utils u = new Utils();
 		List<Cliente> lstCliente = (List<Cliente>) u.lerLista(Cliente.ARQUIVOSERIAL);
 		for (Cliente c: lstCliente) {
 			System.out.println(c.getNome());
-		}	
-		
+		}
 	}
 
 	private static void adicionarCliente() {

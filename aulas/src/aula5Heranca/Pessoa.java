@@ -10,9 +10,9 @@ public class Pessoa implements Serializable{
 	
 	public final static String ARQUIVO = "/Users/cassioseffrin/pessoa.csv";
 	public final static String ARQUIVO_SERIAL = "/Users/cassioseffrin/pessoa_serialv1.obj";
-	public String nome;
-	public String cpf;
-	public String rg;
+	private String nome;
+	private String cpf;
+	private String rg;
 	
 
 
