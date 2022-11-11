@@ -20,3 +20,8 @@ CREATE TABLE `cliente` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `cpf_UNIQUE` (`cpf`)
 ) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+
+Drivers JDBC
+Postgres -> https://jdbc.postgresql.org/download/
+SQL Server -> https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?source=recommendations&view=sql-server-ver16
+MySQL -> https://dev.mysql.com/downloads/connector/j/ 
