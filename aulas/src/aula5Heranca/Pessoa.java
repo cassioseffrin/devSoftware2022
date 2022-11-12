@@ -13,7 +13,8 @@ public class Pessoa implements Serializable{
 	private String nome;
 	private String cpf;
 	private String rg;
-	
+	private String endereco;
+	private Integer id;
 
 
 	public Pessoa( ){
@@ -70,9 +71,21 @@ public class Pessoa implements Serializable{
 		this.rg = rg;
 	}
 
-	
-	
-	
-	
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
 	
 }

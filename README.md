@@ -25,3 +25,9 @@ Drivers JDBC
 Postgres -> https://jdbc.postgresql.org/download/
 SQL Server -> https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?source=recommendations&view=sql-server-ver16
 MySQL -> https://dev.mysql.com/downloads/connector/j/ 
+
+
+ex insercao:
+INSERT INTO cliente (nome, cpf, rg, endereco) values ('Nikolas', '243234234', '234234', 'rua cc')
+
+SELECT * from cliente;

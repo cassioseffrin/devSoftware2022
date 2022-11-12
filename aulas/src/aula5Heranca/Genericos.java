@@ -31,18 +31,18 @@ public class Genericos {
 		imprimirArrayGenerico(strArray);
 		imprimirArrayGenerico(intArray);
 		
-		Farmaceutico f1 = new Farmaceutico();		
-		f1.nome = "Jose";
-		f1.cpf = "23456465";
-		f1.rg = "567567567";
-		
-		Farmaceutico f2 = new Farmaceutico();		
-		f2.nome = "Jose";
-		f2.cpf = "23456465";
-		f2.rg = "567567567";
-		
-		Farmaceutico[] farmaceuticoArray = {f1, f2 };
-		imprimirArrayGenerico(farmaceuticoArray);
+//		Farmaceutico f1 = new Farmaceutico();		
+//		f1.nome = "Jose";
+//		f1.cpf = "23456465";
+//		f1.rg = "567567567";
+//		
+//		Farmaceutico f2 = new Farmaceutico();		
+//		f2.nome = "Jose";
+//		f2.cpf = "23456465";
+//		f2.rg = "567567567";
+//		
+//		Farmaceutico[] farmaceuticoArray = {f1, f2 };
+//		imprimirArrayGenerico(farmaceuticoArray);
 		
 		
 		

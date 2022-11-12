@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import dao.ClienteDao;
+
 public class Principal {
 	public static void main(String args[]) {
 //		Farmaceutico farmaceutico = new Farmaceutico();
@@ -35,7 +37,16 @@ public class Principal {
 		
 //		adicionarCliente();
 		
-		imprimirListaClientes();	
+//		imprimirListaClientes();
+		
+		
+		
+		ClienteDao clienteDao = new ClienteDao();
+		List<Cliente> lstClientes = clienteDao.listar();
+		
+		for (Cliente c:lstClientes) {
+			System.out.println(c);
+		}
 		
 	}
 
@@ -49,10 +60,10 @@ public class Principal {
 
 	private static void adicionarCliente() {
 		Cliente cliente = new Cliente();
-		cliente.nome = "Ana";
-		cliente.cpf = "23456465";
-		cliente.rg = "567567567";
-		cliente.telefone="(49)3442-2343";
+		cliente.setNome ("Ana");
+		cliente.setCpf ( "23456465");
+		cliente.setRg ( "567567567");
+		cliente.setTelefone("(49)3442-2343");
 		
 		Produto p = new Produto();
 		p.setCodigoBarra(2342342344453L);
